@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+    <select id="getUserList" resultType="com.henry.initial.user.UserInfoDto">
+        SELECT
+            code
+            , user_id
+            , password
+            , auth
+            , enabled
+        FROM user_info
+    </select>
+
+    <update id="makeUserEnabled" parameterType="String">
+        update user_info set enabled = true where user_id = #{userId}
+    </update>
+
+    <delete id="delUser" parameterType="String">
+        delete from user_info where user_id = #{userId}
+    </delete>
+
+</mapper>
