@@ -14,9 +14,4 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/admin")
-    public String admin(Model model) throws Exception {
-        return "admin";
-    }
-
 }
