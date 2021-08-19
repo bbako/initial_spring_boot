@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,9 +31,8 @@ public class FileController {
 //    @Autowired
 //    ProductService productService;
 
-    @PostMapping(value = "/uploadAjaxAction", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    @ResponseBody
-    public String uploadAjaxPost(MultipartFile[] uploadFile, ProductVO productVO, HttpServletRequest request) {
+    @PostMapping(value = "/uploadAjaxAction")
+    public void uploadAjaxPost(MultipartFile[] uploadFile, ProductVO productVO) {
 
         List<ProductVO> list = new ArrayList<>();
 
@@ -72,7 +72,6 @@ public class FileController {
 
         }
 
-        return "redirect:/admin";
     }
 
     @GetMapping("/display")
