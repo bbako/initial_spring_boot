@@ -1,4 +1,4 @@
-<div th:insert="./common/header.html"></div>
+<div th:insert="./common/link.html"></div>
 <style>
   .uploadResult {
     width: 100%;
@@ -35,6 +35,7 @@
     align-items: center;
   }
 </style>
+<body>
 <div class="container">
   <form action="/addProduct" method="post" enctype="multipart/form-data">
     <div class="form-group row">
@@ -74,12 +75,6 @@
 
     </ul>
   </div>
-  <div class="bigPictureWrapper">
-    <div class="bigPicture">
-
-    </div>
-  </div>
-
 </div>
 
 <div th:insert="./common/footer.html"></div>
@@ -94,7 +89,7 @@
       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
     $("#uploadBtn").on("click", function(e) {
-      console.log('4444');
+      console.log('121212121212121');
       var formData = new FormData();
       var inputFile = $("input[name='file']");
       var files = inputFile[0].files;
@@ -115,24 +110,17 @@
         dataType : 'json',
         success : function(result) {
           console.log(result);
-          //showUploadedFile(result);
-          //$("#uploadDiv").html(cloneObj.html());
-        },
-        error :  function(result) {
-          console.log("result");
-          console.log(result);
-        },
-
+          showUploadedFile(result);
+          $("#uploadDiv").html(cloneObj.html());
+        }
       });
-
-
     });
   });
   function showImage(fileCallPath){
     //alert(fileCallPath);
     $(".bigPictureWrapper").css("display","flex").show();
     $(".bigPicture")
-            .html("<img th:src='/display?fileName="+ encodeURI(fileCallPath)+"'>")
+            .html("<img src='/display?fileName="+ encodeURI(fileCallPath)+"'>")
             .animate({width:'100%', height: '100%'}, 1000);
   }
   function checkExtension(fileName, fileSize) {
@@ -147,7 +135,9 @@
     return true;
   }
   function showUploadedFile(uploadResultArr){
-    console.log("11111111");
+
+    console.log("showUploadedFile");
+
     $(".uploadResult").empty();
     var str = "";
     $(uploadResultArr).each(function(i, obj){
@@ -155,11 +145,10 @@
       var originPath = obj.uploadPath+ "\\"+obj.uuid +"_"+obj.fileName;
       originPath = originPath.replace(new RegExp(/\\/g),"/");
       str += "<li><a href=\"javascript:showImage(\'"+originPath+"\')\">"+
-              "<img th:src='\display?fileName="+fileCallPath+"'></a>"+
+              "<img src='/display?fileName="+fileCallPath+"'></a>"+
               "<span data-file=\'"+fileCallPath+"\' data-type='image'> x </span>"+
               "<li>";
     });
-    console.log("222222");
     $(".uploadResult").append(str);
   }
 </script>

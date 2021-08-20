@@ -14,4 +14,14 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/about")
+    public String about(Model model) throws Exception {
+        return "about";
+    }
+
+    @GetMapping("/contact")
+    public String contact(Model model) throws Exception {
+        return "contact";
+    }
+
 }

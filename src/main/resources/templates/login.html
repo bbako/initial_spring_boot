@@ -1,130 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="UTF-8">
-  <title>Henry</title>
-</head>
-<body>
-<div class="wrapper">
-  <!-- Form-->
-  <div class="form col-sm-10 col-md-4">
-    <div class="form-toggle"></div>
-    <div class="form-panel one">
-      <div>
-      </div>
-      <div class="form-header">
-        <h1>Admin Login</h1>
-      </div>
-      <div class="form-content">
-        <form action="/login" method="POST">
-          <div class="form-group">
-            <label for="username">User ID</label>
-            <input id="username" type="text" name="username" required="required"/>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" type="password" name="password" required="required"/>
-          </div>
-          <div th:if="${param.error}" class="alert alert-danger">
-            ID / PASSWORD / 권한 여부를 다시 확인해 주세요.
-          </div>
-          <div class="form-group">
-            <button type="submit">Log In</button>
-          </div>
-        </form>
-
-        <!-- Remind Passowrd -->
-        <div style="margin-top: 10px;">
-          <a th:href="@{/}">-> Go Back Main Page</a>
+<div th:insert="./common/header.html"></div>
+<div class="wrapper fixed__footer">
+  <div class="htc__login__register bg__white ptb--130" style="background: rgba(0, 0, 0, 0) url(/static/images/bg/5.jpg) no-repeat scroll center center / cover ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <ul class="login__register__menu" role="tablist">
+            <li role="presentation" class="login active"><a href="#" role="tab" data-toggle="tab">Login</a></li>
+          </ul>
         </div>
-
       </div>
-    </div>
-    <div class="form-panel two">
-      <div class="form-header">
-        <h1>Register Account</h1>
-      </div>
-      <div class="form-content">
-        <form id="f1" th:action="@{/user}" method="POST">
-          <input id="r_auth" type="hidden" name="auth" value="ROLE_ADMIN,ROLE_USER">
-          <div class="form-group">
-            <label for="r_user_id">User ID</label>
-            <input id="r_user_id" type="text" name="userId" required="required"/>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="htc__login__register__wrap">
+            <div id="login" role="tabpanel" class="single__tabs__panel tab-pane fade in active">
+              <form class="login" action="/login" method="POST">
+                <input id="username" type="text" name="username" required="required" placeholder="ID*">
+                <input id="password" type="password" name="password" required="required" placeholder="Password*">
+                <div class="htc__login__btn mt--30">
+                  <button type="submit">Login</button>
+                </div>
+              </form>
+              <div style="margin-top: 10px;">
+                <a th:href="@{/}">-> Go Back Main Page</a>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="r_password">Password</label>
-            <input id="r_password" type="password" name="password" required="required"/>
-          </div>
-          <div class="form-group">
-            <label for="c_password">Confirm Password</label>
-            <input id="c_password" type="password" name="cpassword" required="required"/>
-            <p id="checkpassword" style="visibility: hidden">Check password</p>
-          </div>
-          <div class="form-group">
-            <button type="button" onclick="reg_account()"><span id="regi_span">Register</span></button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<script type="text/javascript" src="/static/js/jquery/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    let panelOne = $('.form-panel.one')[0].scrollHeight;
-    let panelTwo = $('.form-panel.two')[0].scrollHeight;
 
-    $('.form-panel.two').not('.form-panel.two.active').on('click', function(e) {
-      e.preventDefault();
-
-      $('.form-toggle').addClass('visible');
-      $('.form-panel.one').addClass('hidden');
-      $('.form-panel.two').addClass('active');
-      $('.form').animate({
-        'height': panelTwo
-      }, 200);
-    });
-
-    $('.form-toggle').on('click', function(e) {
-      e.preventDefault();
-      $(this).removeClass('visible');
-      $('.form-panel.one').removeClass('hidden');
-      $('.form-panel.two').removeClass('active');
-      $('.form').animate({
-        'height': panelOne
-      }, 200);
-    });
-
-  });
-
-  function reg_account(){
-    var rpassword = $("#r_password").val();
-    var cpassword = $("#c_password").val();
-    if(rpassword == cpassword){
-
-      var userVO = {
-        userId:$("#r_user_id").val(),
-        password: $("#r_password").val(),
-        auth: $("#r_auth").val(),
-      };
-      $.ajax({
-        url: "/userAjax",
-        type: "POST",
-        data: userVO,
-      }).done(function (fragment) {
-        $("#r_user_id").val("");
-        $("#r_password").val("");
-        $("#c_password").val("");
-        $("#regi_span").html("등록 요청 완료 : 다른 관리자의 확인 후 아이디 사용가능");
-      });
-
-
-
-
-    }else{
-      $("#checkpassword").css("visibility","visible");
-    }
-  }
-</script>
+<script type="text/javascript" src="/static/js/vendor/jquery-1.12.0.min.js"></script>
 </body>
 </html>
