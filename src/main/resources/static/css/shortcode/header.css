@@ -66,7 +66,7 @@
 }
 
 .main__menu > li:hover > a{
-  color: #ff4136;
+  color: #2a80b9;
 }
 .sidebar--content .htc__news__inner {
   margin: 0 auto;
@@ -266,7 +266,7 @@
 }
 .main__menu li.drop ul.dropdown li:hover > a {
   background: #fafafa none repeat scroll 0 0;
-  color: #ff4136;
+  color: #2a80b9;
 }
 .scroll-header .main__menu li.drop ul.dropdown {
   top: 100%;
@@ -398,7 +398,7 @@
   height: 134px;
 }
 .header--3 .main__menu > li > a {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 134px;
 }
@@ -1056,7 +1056,7 @@ h4.offset__title {
   padding: 8px 10px;
 }
 .category-heading > h3 {
-    background: #303030 none repeat scroll 0 0;
+    background: #2a80b9 none repeat scroll 0 0;
     color: #fff;
     font-size: 16px;
     font-weight: normal;
@@ -1068,9 +1068,6 @@ h4.offset__title {
 }
 .category-heading > h3 a {
     color: #fff;
-}
-.category-heading > h3:hover {
-    color: #ff4136;
 }
 .category-heading > h3::before {
     content: "";
@@ -1119,12 +1116,12 @@ h4.offset__title {
     left: 110%;
     opacity: 0;
     visibility: hidden;
-    padding: 52px 30px;
+    padding: 10px;
     position: absolute;
     text-align: left;
     top: 0;
     transition: all 0.3s ease 0s;
-    width: 800px;
+    width: 250px;
     z-index: 999999999;
 }
 .category-menu-list ul li:hover .category-menu-dropdown {
@@ -1135,7 +1132,7 @@ h4.offset__title {
 .category-menu-list ul li .category-common {
     float: left;
     padding-right: 27px;
-    width: 50%;
+    width: 80%;
 }
 .category-menu-list ul li .category-common2 {
     float: left;
@@ -1148,7 +1145,7 @@ h4.offset__title {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 10px;
 }
 .category-menu-list ul li .category-common ul li,
 .category-menu-list ul li .category-common2 ul li {
@@ -1175,6 +1172,12 @@ h4.offset__title {
     background-color: transparent;
 }
 .category-menu-list ul li a i {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #a6a6a6;
+    margin-right: 10px;
+}
+.right-arrow {
     float: right;
     font-size: 14px;
     margin-top: 5px;

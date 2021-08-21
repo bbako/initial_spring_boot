@@ -457,13 +457,17 @@
 	border-left: 1px solid rgba(129, 129, 129, 0.2);
 	border-right: 1px solid rgba(129, 129, 129, 0.2);
 	border-top: 2px solid #ff4136;
-	color: #303030;
+	color: #666666;
 	font-size: 17px;
 	font-weight: 500;
 	padding: 15px;
 	position: relative;
 	text-transform: uppercase;
 	transition: all 0.3s ease 0s;
+}
+
+.product-categories-title{
+	background: lightblue none repeat scroll 0 0;
 }
 .product-categories-menu {
 	background: #ffffff none repeat scroll 0 0;
@@ -3849,7 +3853,8 @@ a.shipping-calculator-button:hover {
 	width: 100%;
 }
 .htc__store__area .section__title.section__title--2 p {
-	width: 53%;
+	width: 100%;
+	word-break: keep-all;
 }
 
 
