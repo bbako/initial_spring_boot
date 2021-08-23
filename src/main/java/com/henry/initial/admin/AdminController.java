@@ -12,18 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @AllArgsConstructor
 public class AdminController {
 
-    AdminService adminService;
-
     @GetMapping("/admin")
     public String admin(Model model) throws Exception {
         return "admin";
-    }
-
-    //상품등록
-    @PostMapping("/addProduct")
-    public String addProductPost(ProductVO vo) {
-        adminService.addProduct(vo);
-        return "redirect:/admin";
     }
 
 }

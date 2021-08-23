@@ -6,16 +6,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class ProductVO {
-    private Integer productId;
-    private String productName;
-    private String productComment;
-    private String fileName;
-    private String filePath;
-
-    public ProductVO(String productName, String productComment , String fileName, String filePath){
-        this.productName = productName;
-        this.productComment = productComment;
-        this.fileName = fileName;
-        this.filePath = filePath;
-    }
+    private Integer prdctId;
+    private Integer ctgrId;
+    private String prdctName;
+    private String prdctInfo;
+    private String prdctImg;
+    private String ctgrName;
+    private String upperCtgrName;
 }
