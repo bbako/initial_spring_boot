@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @AllArgsConstructor
 public class HomeController {
 
+    HomeService homeService;
+
     @GetMapping("/")
     public String index(Model model) throws Exception {
         return "index";
@@ -23,6 +25,18 @@ public class HomeController {
     public String contact(Model model) throws Exception {
         return "contact";
     }
+
+    @GetMapping("/test")
+    public String test(Model model) throws Exception {
+        return "test";
+    }
+
+    @PostMapping("/getCategory2")
+    @ResponseBody
+    public List<CategoryVO> getCategory2(Model model, CategoryVO categoryVO) throws Exception {
+        return  homeService.getCategory2(categoryVO);
+    }
+
 
     @GetMapping("/shop")
     public String shop(Model model) throws Exception {

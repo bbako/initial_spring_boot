@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+    <insert id="addProduct" parameterType="com.henry.initial.product.ProductVO">
+        insert into product (
+             ctgr_id
+            , prdct_name
+            , prdct_info
+            , prdct_img)
+        values (
+            #{ctgrId}
+           , #{prdctName}
+           , #{prdctInfo}
+           , #{prdctImg});
+    </insert>
+
+    <select id="getProduct" resultType="com.henry.initial.product.ProductVO">
+        select A.prdct_id
+             , A.ctgr_id
+             , A.prdct_name
+             , A.prdct_info
+             , A.prdct_img
+             , B.ctgr_name
+             , B.upper_ctgr_id
+             , C.ctgr_name as upper_ctgr_name
+        from product A
+        left join category B
+        on A.ctgr_id = B.ctgr_id
+        left join category C
+        on B.upper_ctgr_id = C.ctgr_id
+
+    </select>
+
+    <delete id="delProduct" parameterType="com.henry.initial.product.ProductVO">
+        delete
+        from product
+        where prdct_id = #{prdctId}
+    </delete>
+</mapper>

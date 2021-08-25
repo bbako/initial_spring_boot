@@ -1,4 +1,4 @@
-package com.henry.initial.file;
+package com.henry.initial.upload;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
