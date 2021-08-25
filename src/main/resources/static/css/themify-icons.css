@@ -123,7 +123,11 @@
 	content: "\e620";
 }
 .ti-mobile:before {
-	content: "\e621";
+	font-family: "Font Awesome 5 Free";
+	content: "\f095";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
 }
 .ti-minus:before {
 	content: "\e622";
@@ -465,7 +469,11 @@
 	content: "\e692";
 }
 .ti-location-pin:before {
-	content: "\e693";
+	font-family: "Font Awesome 5 Free";
+	content: "\f3c5";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
 }
 .ti-list:before {
 	content: "\e694";
@@ -1062,7 +1070,18 @@
 	content: "\e759";
 }
 .ti-email:before {
-	content: "\e75a";
+	font-family: "Font Awesome 5 Free";
+	content: "\f0e0";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
+}
+.ti-fax:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f1ac";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
 }
 .ti-drupal:before {
 	content: "\e75b";

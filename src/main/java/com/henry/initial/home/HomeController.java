@@ -24,4 +24,9 @@ public class HomeController {
         return "contact";
     }
 
+    @GetMapping("/shop")
+    public String shop(Model model) throws Exception {
+        return "shop";
+    }
+
 }
