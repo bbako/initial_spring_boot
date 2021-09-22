@@ -1,69 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
+<div th:insert="./common/link.html"></div>
+<div th:insert="./common/header.html"></div>
 <body>
-
-<div>
-  상위
-  <select id="cate_1" class="select" name="cate_1">
-    <option value="">--선택--</option>
-    <option th:each="ctgr : ${ctgr_list}" th:value="${ctgr.ctgrId}" th:text="${ctgr.ctgrName}"></option>
-  </select>
-</div>
-<div>
-  하위
-<select  id="category">
-  <!--<option value="10">cate10</option>
-  <option value="20">cate20</option>
-  <option value="30">cate30</option>-->
-</select>
-</div>
-<div>
-  이름
-  <input type="text" name="prdct_name" id="prdct_name">
-</div>
-<div>
-  설명
-  <input type="text" name="prdct_info" id="prdct_info">
-</div>
-<div>
-<input id="m_file" name="uploadFiles" type="file">
-</div>
-  <button id="regi_prdct" class="uploadBtn">등록</button>
-
-<div class="uploadResult">
-
-</div>
-
-<div>
-  <table>
-    <colgroup>
-      <col width="10%">
-      <col width="10%">
-      <col width="20%">
-      <col width="30%">
-      <col width="10%">
-    </colgroup>
-    <thead>
-      <tr>
-        <th>category</th>
-        <th>name</th>
-        <th>info</th>
-        <th>img</th>
-        <th>del</th>
-      </tr>
-    </thead>
-    <tbody id="pro_list">
-    </tbody>
-  </table>
+<div style="margin: 50px">
+  <div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      신규 등록
+    </button>
+  </div>
+  <div>
+    <form class="form-inline">
+      <div class="form-group">
+        검색 조건 -- 
+        <label for="cate_1_srch">카테고리1 : </label>
+        <select id="cate_1_srch" class="select form-control" name="cate_1_srch" onchange="getlist()">
+          <option value="">--전체--</option>
+          <option th:each="ctgr : ${ctgr_list}" th:value="${ctgr.ctgrId}" th:text="${ctgr.ctgrName}"></option>
+        </select>
+      </div>
+      <div class="form-group" >
+        <label for="cate_2_srch">카테고리2 : </label>
+        <select  id="cate_2_srch" class="form-control" onchange="getlist()"></select>
+      </div>
+      <button type="button" class="btn btn-default" onclick="getlist()">검색</button>
+    </form>
+  </div>
+  <div>
+    <table class="table table-bordered">
+      <colgroup>
+        <col width="5%">
+        <col width="5%">
+        <col width="10%">
+        <col width="10%">
+        <col width="20%">
+        <col width="30%">
+      </colgroup>
+      <thead class="thead-dark">
+        <tr>
+          <th>삭제</th>
+          <th>순서</th>
+          <th>카테고리</th>
+          <th>제품명</th>
+          <th>제품설명</th>
+          <th>제품사진</th>
+        </tr>
+      </thead>
+      <tbody id="pro_list">
+      </tbody>
+    </table>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">신규 등록</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="cate_1" class="col-sm-3 col-form-label">상위 카테고리</label>
+          <div class="col-sm-9">
+            <select id="cate_1" class="select" name="cate_1">
+              <option value="">--선택--</option>
+              <option th:each="ctgr : ${ctgr_list}" th:value="${ctgr.ctgrId}" th:text="${ctgr.ctgrName}"></option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cate_1" class="col-sm-3 col-form-label">하위 카테고리</label>
+          <div class="col-sm-9">
+            <select  id="category">
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cate_1" class="col-sm-3 col-form-label">이름</label>
+          <div class="col-sm-9">
+            <input type="text" name="prdct_name" id="prdct_name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cate_1" class="col-sm-3 col-form-label">설명</label>
+          <div class="col-sm-9">
+            <input type="text" name="prdct_info" id="prdct_info">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cate_1" class="col-sm-3 col-form-label">사진</label>
+          <div class="col-sm-9">
+            <input id="m_file" name="uploadFiles" type="file">
+          </div>
+        </div>
+        <div class="uploadResult"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button id="regi_prdct" type="button" class="btn btn-primary uploadBtn">등록</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div th:insert="./common/footer.html"></div>
 
 <script>
 
@@ -153,6 +193,7 @@
       type: 'POST',
       dataType: 'text',
       success: function(result){
+        $('#exampleModal').modal('hide');
         getlist();
       }
     })
@@ -161,11 +202,18 @@
 
   function getlist(){
 
+    var formData = new FormData();
+    var cate_1_srch = $("#cate_1_srch option:selected").val()?$("#cate_1_srch option:selected").val():"";
+    var cate_2_srch = $("#cate_2_srch option:selected").val()?$("#cate_2_srch option:selected").val():"";
+
+    formData.append("upperCtgrId", cate_1_srch);
+    formData.append("ctgrId", cate_2_srch);
+
     $.ajax({
       url: '/getProduct',
       processData: false,
       contentType: false,
-      data: {},
+      data: formData,
       type: 'POST',
       dataType:'json',
       success: function(result){
@@ -175,12 +223,13 @@
 
         for(var i = 0 ; i < result.length ; i++ ){
           str +='<tr>' +
-                '  <td>'+ result[i].upperCtgrName+' > '+ result[i].ctgrName +'</td>' +
-                '  <td>'+ result[i].prdctName +'</td>' +
-                '  <td>'+ result[i].prdctInfo +'</td>' +
-                '  <td><img src="/display?fileName='+result[i].prdctImg+'" width="150px"></td>' +
-                '  <td><button onclick="delProduct(\''+ result[i].prdctId +'\')">del</button></td>' +
-                '</tr>';
+                  '  <td><button type="button" class="btn btn-primary" onclick="delProduct(\''+ result[i].prdctId +'\')">삭제</button></td>' +
+                  '  <td><input id="prd_or'+ result[i].prdctId +'" type="number" name="" value="'+ result[i].prdctOrder +'" onchange="changeProduct('+ result[i].prdctId +')"></td>' +
+                  '  <td>'+ result[i].upperCtgrName+' > '+ result[i].ctgrName +'</td>' +
+                  '  <td><input id="prd_nm'+ result[i].prdctId +'" type="text" name="" value="'+ result[i].prdctName +'" onchange="changeProduct('+ result[i].prdctId +')"></td>' +
+                  '  <td><input id="prd_if'+ result[i].prdctId +'" type="text" name="" value="'+ result[i].prdctInfo +'" onchange="changeProduct('+ result[i].prdctId +')"></td>' +
+                  '  <td><img src="/display?fileName='+result[i].prdctImg+'" width="150px"></td>' +
+                  '</tr>';
         }
         $("#pro_list").append(str);
       },
@@ -196,6 +245,43 @@
     formData.append("prdctId", prdctId);
     $.ajax({
       url: '/delProduct',
+      processData: false,
+      contentType: false,
+      data: formData,
+      type: 'POST',
+      dataType:'text',
+      success: function(result){
+        getlist();
+      },
+      error: function(jqXHR, textStatus, errorThrown){
+        console.log(textStatus);
+      }
+
+    });
+  }
+
+  function changeProduct(item){
+
+    console.log(item);
+
+    var prdctId2 = item;
+    var prdctOrder2 = $("#prd_or"+item).val();
+    var prdctName2 = $("#prd_nm"+item).val();
+    var prdctInfo2 = $("#prd_if"+item).val();
+
+    console.log(prdctOrder2);
+
+    var formData = new FormData();
+
+    formData.append("prdctId", prdctId2);
+    formData.append("prdctOrder", prdctOrder2);
+    formData.append("prdctName", prdctName2);
+    formData.append("prdctInfo", prdctInfo2);
+
+    console.log(formData);
+
+    $.ajax({
+      url: '/changeProduct',
       processData: false,
       contentType: false,
       data: formData,
@@ -232,6 +318,33 @@
         }
 
         $("#category").append(str);
+      },
+      error: function(jqXHR, textStatus, errorThrown){
+        console.log(textStatus);
+      }
+    });
+  });
+  $('#cate_1_srch').on('change', function() {
+    var formData = new FormData();
+    formData.append("ctgrId", this.value);
+    $.ajax({
+      url: '/getCategory2',
+      processData: false,
+      contentType: false,
+      data: formData,
+      type: 'POST',
+      dataType:'json',
+      success: function(result){
+        console.log(result);
+        $("#cate_2_srch").empty();
+
+        var str = "";
+        for(var i = 0 ; i < result.length ; i++ ){
+          str += '<option value="'+ result[i].ctgrId +'">'+ result[i].ctgrName +'</option>';
+        }
+
+        $("#cate_2_srch").append(str);
+        getlist();
       },
       error: function(jqXHR, textStatus, errorThrown){
         console.log(textStatus);

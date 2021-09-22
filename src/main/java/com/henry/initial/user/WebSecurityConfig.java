@@ -33,6 +33,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login") // 로그인 페이지 링크
+                .loginProcessingUrl("/login")
+                .usernameParameter("userId")
+                .passwordParameter("password")
                 .defaultSuccessUrl("/admin")
                 .and()
                 .logout()

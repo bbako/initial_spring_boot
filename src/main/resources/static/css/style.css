@@ -254,11 +254,11 @@
 }
 .product__details h2 {
 	color: #444444;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
 }
 .product__details {
-	padding-top: 27px;
+	padding: 10px;
 }
 .product__price {
 	display: flex;
@@ -2469,9 +2469,9 @@ select.select-color {
 	background: #999 none repeat scroll 0 0;
 	color: #fff;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 15px;
 	height: 26px;
-	line-height: 24px;
+	line-height: 28px;
 	text-align: center;
 	transition: all 0.4s ease 0s;
 	width: 50px;
@@ -2719,24 +2719,7 @@ select.select-color {
 	min-height: 100px;
 	padding-left: 20px;
 }
-.review-btn {
-	margin-top: 30px;
-}
-.review-btn a.fv-btn {
-	border: 1px solid #999;
-	display: inline-block;
-	font-size: 16px;
-	height: 40px;
-	line-height: 37px;
-	padding: 0 28px;
-	text-transform: uppercase;
-	transition: 0.4s;
-}
-.review-btn a.fv-btn:hover {
-	border: 1px solid #ff4136;
-	background: #ff4136;
-	color: #fff;
-}
+
 .review-box textarea::-moz-placeholder {
 	color: #333 !important;
 	opacity: 1 !important;
@@ -4288,4 +4271,25 @@ a.shipping-calculator-button:hover {
 	font-size: 15px;
 	margin-right: 2px;
 	color: #f8cd35;
+}
+
+.product_div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.esti-btn {
+	border: 1px solid #999;
+	display: inline-block;
+	font-size: 16px;
+	height: 40px;
+	line-height: 37px;
+	padding: 0 28px;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.esti-btn:hover {
+	border: 1px solid #ff4136;
+	background: #ff4136;
+	color: #fff;
 }

@@ -25,12 +25,19 @@
              , B.ctgr_name
              , B.upper_ctgr_id
              , C.ctgr_name as upper_ctgr_name
+             , A.prdct_order
         from product A
         left join category B
         on A.ctgr_id = B.ctgr_id
         left join category C
         on B.upper_ctgr_id = C.ctgr_id
-
+        <if test='upperCtgrId != null  and ctgrId != null'>
+            where B.upper_ctgr_id = #{upperCtgrId}
+        <if test='upperCtgrId != ctgrId'>
+              and A.ctgr_id = #{ctgrId}
+        </if>
+        </if>
+        order by A.ctgr_id asc , prdct_order asc
     </select>
 
     <delete id="delProduct" parameterType="com.henry.initial.product.ProductVO">
@@ -38,4 +45,13 @@
         from product
         where prdct_id = #{prdctId}
     </delete>
+    <update id="changeProduct" parameterType="com.henry.initial.product.ProductVO">
+        update product
+        set
+            prdct_order = #{prdctOrder}
+            , prdct_name = #{prdctName}
+            , prdct_info = #{prdctInfo}
+        where prdct_id = #{prdctId}
+
+    </update>
 </mapper>

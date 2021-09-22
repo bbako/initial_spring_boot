@@ -1,5 +1,6 @@
 package com.henry.initial.product;
 
+import com.henry.initial.home.CategoryVO;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +16,15 @@ public class ProductService {
         productDao.addProduct(vo);
     }
 
-    public List<ProductVO> getProduct() {
-        return productDao.getProduct();
+    public List<ProductVO> getProduct(CategoryVO categoryVO) {
+        return productDao.getProduct(categoryVO);
     }
 
     public void delProduct(ProductVO vo) {
         productDao.delProduct(vo);
     }
+    public void changeProduct(ProductVO vo) {
+        productDao.changeProduct(vo);
+    }
+
 }

@@ -20,20 +20,12 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/user")
-    public String user(UserInfoDto infoDto) { // 회원 추가
+    public String signup(UserInfoDto infoDto) { // 회원 추가
         userService.save(infoDto);
         return "redirect:/login";
     }
 
-    @PostMapping("/userAjax")
-    public String userAjax(Model model, UserInfoDto infoDto) {
-        userService.save(infoDto);
-        //user info
-        List<UserInfo> userList = userService.getUserList();
-        model.addAttribute("userList", userList);
-        return "admin::#tabmenu_02";
-    }
-
+    // 추가
     @GetMapping(value = "/logout")
     public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
@@ -45,15 +37,4 @@ public class UserController {
         return "login";
     }
 
-    @GetMapping("/userenabled/{userId}")
-    public String userenabled(@PathVariable("userId") String userId, Model model) {
-        userService.makeUserEnabled(userId);
-        return "redirect:/admin";
-    }
-
-    @GetMapping("/userdel/{no}")
-    public String userdel(@PathVariable("no") int no, Model model) {
-        userService.delUser(no);
-        return "redirect:/admin";
-    }
 }

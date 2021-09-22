@@ -9,5 +9,4 @@ public class UserInfoDto {
     private String userId;
     private String password;
     private String auth;
-    private Boolean enable;
 }

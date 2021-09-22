@@ -20,4 +20,20 @@ public class HomeDao {
     public List<CategoryVO> getCategory2(CategoryVO categoryVO) {
         return sqlSession.selectList("home.getCategory2", categoryVO);
     }
+
+    public void regiEsti(EstimateVO estimateVO) {
+        sqlSession.insert("home.regiEsti", estimateVO);
+    }
+
+    public List<EstimateVO> getEsti() {
+        return sqlSession.selectList("home.getEsti");
+    }
+
+    public EstimateVO showContents(EstimateVO estimateVO) {
+        return sqlSession.selectOne("home.showContents",estimateVO);
+    }
+
+    public void modiEsti(EstimateVO estimateVO) {
+        sqlSession.update("home.modiEsti", estimateVO);
+    }
 }

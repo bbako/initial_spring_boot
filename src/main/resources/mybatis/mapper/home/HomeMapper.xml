@@ -24,4 +24,65 @@
 
     </select>
 
+    <insert id="regiEsti" parameterType="com.henry.initial.home.EstimateVO">
+        insert into estimate (
+            esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+        ) values (
+            #{estiName}
+            , #{estiEmail}
+            , #{estiTel}
+            , #{estiPassword}
+            , #{estiTitle}
+            , #{estiContent}
+        )
+    </insert>
+
+    <select id="getEsti" resultType="com.henry.initial.home.EstimateVO">
+        select
+            t.esti_seq
+            , t.esti_name
+            , t.esti_email
+            , t.esti_tel
+            , t.esti_password
+            , t.esti_title
+            , t.esti_content
+            , t.esti_regdate
+            , @rownum := @rownum + 1 AS rownum
+        from estimate t,
+            (SELECT @rownum := 0) r
+        order by esti_regdate desc, rownum desc
+    </select>
+
+    <select id="showContents" resultType="com.henry.initial.home.EstimateVO">
+        select
+            esti_seq
+            , esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+            , esti_regdate
+        from estimate
+        where esti_seq = #{estiSeq}
+        <if test="!estiPassword.equals('seoilco')">
+          and esti_password = #{estiPassword}
+        </if>
+    </select>
+
+    <update id="modiEsti" parameterType="com.henry.initial.home.EstimateVO">
+        update estimate set
+                  esti_name = #{estiName}
+                , esti_email = #{estiEmail}
+                , esti_tel = #{estiTel}
+                , esti_password = #{estiPassword}
+                , esti_title = #{estiTitle}
+                , esti_content = #{estiContent}
+        where esti_seq = #{estiSeq}
+    </update>
 </mapper>

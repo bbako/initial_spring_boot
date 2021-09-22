@@ -1,9 +1,6 @@
 package com.henry.initial.user;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -28,15 +25,11 @@ public class UserInfo implements UserDetails {
     @Column(name = "auth")
     private String auth;
 
-    @Column(name = "enabled")
-    private boolean enabled;
-
     @Builder
-    public UserInfo(String userId, String password, String auth, Boolean enabled) {
+    public UserInfo(String userId, String password, String auth) {
         this.userId = userId;
         this.password = password;
         this.auth = auth;
-        this.enabled = enabled;
     }
 
     // 사용자의 권한을 콜렉션 형태로 반환
@@ -86,6 +79,7 @@ public class UserInfo implements UserDetails {
     // 계정 사용 가능 여부 반환
     @Override
     public boolean isEnabled() {
-        return enabled;
+        // 계정이 사용 가능한지 확인하는 로직
+        return true; // true -> 사용 가능
     }
 }

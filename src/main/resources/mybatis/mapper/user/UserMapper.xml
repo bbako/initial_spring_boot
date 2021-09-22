@@ -5,8 +5,7 @@
 <mapper namespace="user">
     <select id="getUserList" resultType="com.henry.initial.user.UserInfoDto">
         SELECT
-            code
-            , user_id
+            userId
             , password
             , auth
             , enabled
@@ -14,7 +13,7 @@
     </select>
 
     <update id="makeUserEnabled" parameterType="String">
-        update user_info set enabled = true where user_id = #{userId}
+        update user_info set enabled = true where userId = #{userId}
     </update>
 
     <delete id="delUser" parameterType="String">

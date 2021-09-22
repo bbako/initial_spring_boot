@@ -20,4 +20,20 @@ public class HomeService {
     public List<CategoryVO> getCategory2(CategoryVO categoryVO) {
         return homeDao.getCategory2(categoryVO);
     }
+
+    public void regiEsti(EstimateVO estimateVO) {
+        homeDao.regiEsti(estimateVO);
+    }
+
+    public List<EstimateVO> getEsti() {
+        return homeDao.getEsti();
+    }
+
+    public EstimateVO showContents(EstimateVO estimateVO) {
+        return homeDao.showContents(estimateVO);
+    }
+
+    public void modiEsti(EstimateVO estimateVO) {
+        homeDao.modiEsti(estimateVO);
+    }
 }

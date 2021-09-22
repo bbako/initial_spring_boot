@@ -11,6 +11,7 @@ public class ProductVO {
     private String prdctName;
     private String prdctInfo;
     private String prdctImg;
+    private Integer prdctOrder;
     private String ctgrName;
     private String upperCtgrName;
 }

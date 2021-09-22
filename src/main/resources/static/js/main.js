@@ -66,28 +66,10 @@ $('.mobile-menu nav').meanmenu({
 $('.htc__product__container').imagesLoaded( function() {
   
     // filter items on button click
-    $('.product__menu').on( 'click', 'button', function() {
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
-    }); 
-    // init Isotope
-    var $grid = $('.product__list').isotope({
-      itemSelector: '.single__pro',
-      percentPosition: true,
-      transitionDuration: '0.7s',
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: '.single__pro',
-      }
-    });
+
 
 });
 
-$('.product__menu button').on('click', function(event) {
-    $(this).siblings('.is-checked').removeClass('is-checked');
-    $(this).addClass('is-checked');
-    event.preventDefault();
-});
 
 
 
@@ -352,7 +334,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
 
 
   $('.product-slider-active').owlCarousel({
-      loop: true,
+      loop: false,
       margin:0,
       nav:true,
       navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
