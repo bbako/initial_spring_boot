@@ -114,14 +114,14 @@
     </div>
     <h2>Page not found</h2>
     <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
-    <a th:href="@{/}">home page</a>
+    <a th:href="@{/}">서일 테크놀로지 <br> 메인 페이지로 이동</a>
   </div>
 </div>
 <script type="text/javascript" src="/static/js/vendor/jquery-1.12.0.min.js"></script>
 <script>
   $("#luck").click(function (){
     $(".notfound-404").empty();
-    $(".notfound-404").css("background-image", "url(../img/error-bg.gif)");
+    $(".notfound-404").css("background-image", "url(/static/images/error2.gif)");
     $(".notfound-404").css("background-size", "contain");
     $(".notfound-404").css("background-repeat", "no-repeat");
   })

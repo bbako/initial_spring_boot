@@ -4293,3 +4293,15 @@ a.shipping-calculator-button:hover {
 	background: #ff4136;
 	color: #fff;
 }
+
+.carousel-caption2 {
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	bottom: -19px;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+}

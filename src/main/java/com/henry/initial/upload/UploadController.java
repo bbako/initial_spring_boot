@@ -25,8 +25,7 @@ import java.util.UUID;
 @Log4j2
 public class UploadController {
 
-    @Value("${spring.servlet.multipart.location}")
-    private String uploadPath;
+    private String uploadPath = "";
 
     @PostMapping("/uploadAjax")
     public ResponseEntity<List<UploadResultDTO>> uploadFile(MultipartFile[] uploadFiles){

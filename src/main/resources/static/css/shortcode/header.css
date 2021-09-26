@@ -23,7 +23,7 @@
 }
 .main__menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .main__menu > li > a {
   color: #666666;

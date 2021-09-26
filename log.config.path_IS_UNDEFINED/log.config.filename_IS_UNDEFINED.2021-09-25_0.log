@@ -1,0 +1,875 @@
+INFO  21-09-25 11:46:18[restartedMain] [InitialApplication:55] - Starting InitialApplication using Java 16.0.2 on DESKTOP-SOHFH9O with PID 6656 (C:\Users\hy\Desktop\initial_spring_boot\build\classes\java\main started by hy in C:\Users\hy\Desktop\initial_spring_boot)
+INFO  21-09-25 11:46:18[restartedMain] [InitialApplication:659] - No active profile set, falling back to default profiles: default
+INFO  21-09-25 11:46:18[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  21-09-25 11:46:18[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode!
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.henry.initial.user.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode!
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  21-09-25 11:46:19[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+DEBUG 21-09-25 11:46:19[restartedMain] [LogFactory:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+WARN  21-09-25 11:46:19[restartedMain] [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.henry.initial]' package. Please check your configuration.
+INFO  21-09-25 11:46:20[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8088 (http)
+INFO  21-09-25 11:46:20[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8088"]
+INFO  21-09-25 11:46:20[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  21-09-25 11:46:20[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.50]
+INFO  21-09-25 11:46:20[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  21-09-25 11:46:20[restartedMain] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1366 ms
+INFO  21-09-25 11:46:20[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:365] - 1. Connection opened. {executed in 118ms} 
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.new Connection returned 
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getNetworkTimeout() returned 0
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.isReadOnly() returned false
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.isValid(1) returned true
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getTransactionIsolation() returned 4
+INFO  21-09-25 11:46:20[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@3c86350a
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 11:46:20[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  21-09-25 11:46:20[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.4.32.Final
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:365] - 2. Connection opened. {executed in 27ms} 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 2. Connection.new Connection returned 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 2. Connection.isReadOnly() returned false
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 2. Connection.getAutoCommit() returned true
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:365] - 3. Connection opened. {executed in 26ms} 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 3. Connection.new Connection returned 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 3. Connection.isReadOnly() returned false
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 3. Connection.getAutoCommit() returned true
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:365] - 4. Connection opened. {executed in 23ms} 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 4. Connection.new Connection returned 
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 4. Connection.isReadOnly() returned false
+INFO  21-09-25 11:46:20[HikariPool-1 connection adder] [log4j2:197] - 4. Connection.getAutoCommit() returned true
+INFO  21-09-25 11:46:20[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@2f09786
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@ff39aca
+INFO  21-09-25 11:46:20[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getCatalog() returned hoyeontomcat
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getSchema() returned null
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getSchema() returned null
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@4c4cfd8c
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.createClob() returned com.mysql.cj.jdbc.Clob@6e373ac0
+INFO  21-09-25 11:46:20[restartedMain] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 11:46:21[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  21-09-25 11:46:21[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  21-09-25 11:46:21[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  21-09-25 11:46:21[restartedMain] [DefaultSecurityFilterChain:51] - Will secure Ant [pattern='/css/**'] with []
+INFO  21-09-25 11:46:21[restartedMain] [DefaultSecurityFilterChain:51] - Will secure Ant [pattern='/js/**'] with []
+INFO  21-09-25 11:46:21[restartedMain] [DefaultSecurityFilterChain:51] - Will secure Ant [pattern='/img/**'] with []
+INFO  21-09-25 11:46:21[restartedMain] [DefaultSecurityFilterChain:51] - Will secure Ant [pattern='/fonts/**'] with []
+INFO  21-09-25 11:46:21[restartedMain] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13dc3fea, org.springframework.security.web.context.SecurityContextPersistenceFilter@19b83bc4, org.springframework.security.web.header.HeaderWriterFilter@4304e01c, org.springframework.security.web.authentication.logout.LogoutFilter@ccf4aa0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f19991f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d4e5c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@598fdfd5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4993f561, org.springframework.security.web.session.SessionManagementFilter@28b36b05, org.springframework.security.web.access.ExceptionTranslationFilter@5ea7ef84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f937ed]
+INFO  21-09-25 11:46:21[restartedMain] [WelcomePageHandlerMapping:57] - Adding welcome page template: index
+WARN  21-09-25 11:46:22[restartedMain] [TemplateMode:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+INFO  21-09-25 11:46:22[restartedMain] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 11:46:22[restartedMain] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@684c5c07
+INFO  21-09-25 11:46:22[restartedMain] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 11:46:22[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8088"]
+INFO  21-09-25 11:46:22[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8088 (http) with context path ''
+INFO  21-09-25 11:46:22[restartedMain] [InitialApplication:61] - Started InitialApplication in 3.792 seconds (JVM running for 4.454)
+INFO  21-09-25 12:13:39[http-nio-8088-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  21-09-25 12:13:39[http-nio-8088-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  21-09-25 12:13:39[http-nio-8088-exec-1] [DispatcherServlet:547] - Completed initialization in 0 ms
+WARN  21-09-25 12:13:41[http-nio-8088-exec-9] [PageNotFound:1275] - No mapping for GET /favicon.ico
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. Connection.prepareStatement(select
+            t.esti_seq
+            , t.esti_name
+            , t.esti_email
+            , t.esti_tel
+            , t.esti_password
+            , t.esti_title
+            , t.esti_content
+            , t.esti_regdate
+            , @rownum := @rownum + 1 AS rownum
+        from estimate t,
+            (SELECT @rownum := 0) r
+        order by esti_regdate desc, rownum desc) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@f21a15e
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:243] - 1. select t.esti_seq , t.esti_name , t.esti_email , t.esti_tel , t.esti_password , t.esti_title 
+, t.esti_content , t.esti_regdate , @rownum := @rownum + 1 AS rownum from estimate t, (SELECT 
+@rownum := 0) r order by esti_regdate desc, rownum desc  {executed in 4 ms}
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@37c72fd8
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@5a733d5d - Field level information: 
+	com.mysql.cj.result.Field@1cc85c9[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@2c6ee861[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@4dd3671[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@47077a62[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@22005d86[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@79768447[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@14f54ba6[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@685df730[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@48117bd0[dbName=null,tableName=null,originalTableName=null,columnName=rownum,originalColumnName=rownum,mysqlType=5(FIELD_TYPE_DOUBLE),sqlType=8,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 3
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 24
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_email) returned hoy2s@dkfil.com
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 12344567
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:51:01
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 2
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 23
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 3333
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:41:25
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 1
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:390] - 
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|esti_seq |esti_name |esti_email      |esti_tel |esti_password |esti_title |esti_content                                 |esti_regdate        |rownum |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|25       |박호연       |123@12344.com   |124-4568 |1111          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중                  |2021-09-22 20:52:40 |3      |
+|24       |박호연       |hoy2s@dkfil.com |12344567 |1111          |견적 문의      |견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+ |2021-09-22 20:51:01 |2      |
+|23       |3333      |3333            |3333     |3333          |3333       |3333                                         |2021-09-22 20:41:25 |1      |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@2fbddd61
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:03[http-nio-8088-exec-9] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.prepareStatement(select
+            esti_seq
+            , esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+            , esti_regdate
+        from estimate
+        where esti_seq = ?
+         
+          and esti_password = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@67d2a835
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setInt(1, 25) returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(2, "1111") returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:243] - 1. select esti_seq , esti_name , esti_email , esti_tel , esti_password , esti_title , esti_content 
+, esti_regdate from estimate where esti_seq = 25 and esti_password = '1111'  {executed in 3 ms}
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@314cb9ce
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@61184d28 - Field level information: 
+	com.mysql.cj.result.Field@618e7a36[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@13eff532[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@47b9bc48[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@64ebd89a[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@762651fb[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@1a0c7c68[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@105dd89d[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@2ac8fd04[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:390] - 
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|esti_seq |esti_name |esti_email    |esti_tel |esti_password |esti_title |esti_content                |esti_regdate        |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|25       |박호연       |123@12344.com |124-4568 |1111          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중 |2021-09-22 20:52:40 |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@17b306bf
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:11[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.prepareStatement(update estimate set
+                  esti_name = ?
+                , esti_email = ?
+                , esti_tel = ?
+                , esti_password = ?
+                , esti_title = ?
+                , esti_content = ?
+        where esti_seq = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@558646a1
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(1, "박호연") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(2, "123@12344.com") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(3, "124-4568") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(4, "1234") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(5, "견적 문의 ") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setString(6, "안녕하세요.
+엔터 테스트.....
+한글 테스트 중") returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.setInt(7, 25) returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:243] - 1. update estimate set esti_name = '박호연' , esti_email = '123@12344.com' , esti_tel = '124-4568' 
+, esti_password = '1234' , esti_title = '견적 문의 ' , esti_content = '안녕하세요. 엔터 테스트..... 한글 테스트 
+중' where esti_seq = 25  {executed in 4 ms}
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.execute() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned 1
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. Connection.prepareStatement(select
+            t.esti_seq
+            , t.esti_name
+            , t.esti_email
+            , t.esti_tel
+            , t.esti_password
+            , t.esti_title
+            , t.esti_content
+            , t.esti_regdate
+            , @rownum := @rownum + 1 AS rownum
+        from estimate t,
+            (SELECT @rownum := 0) r
+        order by esti_regdate desc, rownum desc) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5e2e5c1a
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:243] - 1. select t.esti_seq , t.esti_name , t.esti_email , t.esti_tel , t.esti_password , t.esti_title 
+, t.esti_content , t.esti_regdate , @rownum := @rownum + 1 AS rownum from estimate t, (SELECT 
+@rownum := 0) r order by esti_regdate desc, rownum desc  {executed in 3 ms}
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3b55d0ba
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@61ce4c4a - Field level information: 
+	com.mysql.cj.result.Field@6e401fa9[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@42a250f7[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@57678819[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@445832a3[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@2a8bc0d6[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@7afe1898[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@11b2609e[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@147a9521[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@60037a08[dbName=null,tableName=null,originalTableName=null,columnName=rownum,originalColumnName=rownum,mysqlType=5(FIELD_TYPE_DOUBLE),sqlType=8,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1234
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 3
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 24
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_email) returned hoy2s@dkfil.com
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 12344567
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:51:01
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 2
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 23
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 3333
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:41:25
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 1
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:390] - 
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|esti_seq |esti_name |esti_email      |esti_tel |esti_password |esti_title |esti_content                                 |esti_regdate        |rownum |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|25       |박호연       |123@12344.com   |124-4568 |1234          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중                  |2021-09-22 20:52:40 |3      |
+|24       |박호연       |hoy2s@dkfil.com |12344567 |1111          |견적 문의      |견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+ |2021-09-22 20:51:01 |2      |
+|23       |3333      |3333            |3333     |3333          |3333       |3333                                         |2021-09-22 20:41:25 |1      |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@6887bf00
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:21[http-nio-8088-exec-10] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. Connection.prepareStatement(select
+            esti_seq
+            , esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+            , esti_regdate
+        from estimate
+        where esti_seq = ?
+         
+          and esti_password = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@16599fb7
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.setInt(1, 25) returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.setString(2, "1234") returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:243] - 1. select esti_seq , esti_name , esti_email , esti_tel , esti_password , esti_title , esti_content 
+, esti_regdate from estimate where esti_seq = 25 and esti_password = '1234'  {executed in 4 ms}
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6d8662da
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@4fc0e186 - Field level information: 
+	com.mysql.cj.result.Field@ebf5da6[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@54c1dfe1[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@a8fe711[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@420bfb17[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@36adcc9d[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@6c49337e[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@198be689[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@44575ec[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1234
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:390] - 
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|esti_seq |esti_name |esti_email    |esti_tel |esti_password |esti_title |esti_content                |esti_regdate        |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|25       |박호연       |123@12344.com |124-4568 |1234          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중 |2021-09-22 20:52:40 |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@79a392ea
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:31[http-nio-8088-exec-5] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. Connection.prepareStatement(select
+            esti_seq
+            , esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+            , esti_regdate
+        from estimate
+        where esti_seq = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@a9f682e
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.setInt(1, 25) returned 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:243] - 1. select esti_seq , esti_name , esti_email , esti_tel , esti_password , esti_title , esti_content 
+, esti_regdate from estimate where esti_seq = 25  {executed in 3 ms}
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5a9fb324
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@ac5cad5 - Field level information: 
+	com.mysql.cj.result.Field@34f15e65[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@455e8ecd[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@627f03d1[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@46c8ee29[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@78f482e3[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@49ed53d6[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@5396a0b1[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@52aea54c[dbName=hoyeontomcat,tableName=estimate,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1234
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:390] - 
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|esti_seq |esti_name |esti_email    |esti_tel |esti_password |esti_title |esti_content                |esti_regdate        |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+|25       |박호연       |123@12344.com |124-4568 |1234          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중 |2021-09-22 20:52:40 |
+|---------|----------|--------------|---------|--------------|-----------|----------------------------|--------------------|
+
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@2dc14797
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:14:47[http-nio-8088-exec-6] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.isValid(5) returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.prepareStatement(insert into estimate (
+            esti_name
+            , esti_email
+            , esti_tel
+            , esti_password
+            , esti_title
+            , esti_content
+        ) values (
+            ?
+            , ?
+            , ?
+            , ?
+            , ?
+            , ?
+        )) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6a33affb
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(1, "박호연") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(2, "aaaa") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(3, "aaaa") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(4, "1111") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(5, "aaa") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.setString(6, "aaaa") returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:243] - 1. insert into estimate ( esti_name , esti_email , esti_tel , esti_password , esti_title , esti_content 
+) values ( '박호연' , 'aaaa' , 'aaaa' , '1111' , 'aaa' , 'aaaa' )  {executed in 3 ms}
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.execute() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned 1
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-4] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.new PreparedStatement returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.prepareStatement(select
+            t.esti_seq
+            , t.esti_name
+            , t.esti_email
+            , t.esti_tel
+            , t.esti_password
+            , t.esti_title
+            , t.esti_content
+            , t.esti_regdate
+            , @rownum := @rownum + 1 AS rownum
+        from estimate t,
+            (SELECT @rownum := 0) r
+        order by esti_regdate desc, rownum desc) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@28a4172b
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:243] - 1. select t.esti_seq , t.esti_name , t.esti_email , t.esti_tel , t.esti_password , t.esti_title 
+, t.esti_content , t.esti_regdate , @rownum := @rownum + 1 AS rownum from estimate t, (SELECT 
+@rownum := 0) r order by esti_regdate desc, rownum desc  {executed in 3 ms}
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.execute() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.new ResultSet returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@46ab2fd0
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@21ffcaea - Field level information: 
+	com.mysql.cj.result.Field@2d434d8[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_seq,originalColumnName=esti_seq,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@a4166e6[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_name,originalColumnName=esti_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@150b0dd1[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_email,originalColumnName=esti_email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@4a7c3d00[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_tel,originalColumnName=esti_tel,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@69ada263[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_password,originalColumnName=esti_password,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@685a8fe6[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_title,originalColumnName=esti_title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@257272b9[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_content,originalColumnName=esti_content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@ecdcf2a[dbName=hoyeontomcat,tableName=t,originalTableName=estimate,columnName=esti_regdate,originalColumnName=esti_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@a77da2a[dbName=null,tableName=null,originalTableName=null,columnName=rownum,originalColumnName=rownum,mysqlType=5(FIELD_TYPE_DOUBLE),sqlType=8,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getType() returned 1003
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 26
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_email) returned aaaa
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned aaaa
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_title) returned aaa
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_content) returned aaaa
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-25 12:15:09
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 4
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 25
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 123@12344.com
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 124-4568
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1234
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 안녕하세요.
+엔터 테스트.....
+한글 테스트 중
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:52:40
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 3
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 24
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 박호연
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_email) returned hoy2s@dkfil.com
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 12344567
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 1111
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 견적 문의
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:51:01
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 2
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.next() returned true
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(esti_seq) returned 23
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_name) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_email) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_tel) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_password) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_title) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_content) returned 3333
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getString(esti_regdate) returned 2021-09-22 20:41:25
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.getInt(rownum) returned 1
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.isClosed() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:390] - 
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|esti_seq |esti_name |esti_email      |esti_tel |esti_password |esti_title |esti_content                                 |esti_regdate        |rownum |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+|26       |박호연       |aaaa            |aaaa     |1111          |aaa        |aaaa                                         |2021-09-25 12:15:09 |4      |
+|25       |박호연       |123@12344.com   |124-4568 |1234          |견적 문의      |안녕하세요.
+엔터 테스트.....
+한글 테스트 중                  |2021-09-22 20:52:40 |3      |
+|24       |박호연       |hoy2s@dkfil.com |12344567 |1111          |견적 문의      |견적 내용
+안녕하세요.
+질문 내용 
+1.22222
+2.3333
+4....555
+ |2021-09-22 20:51:01 |2      |
+|23       |3333      |3333            |3333     |3333          |3333       |3333                                         |2021-09-22 20:41:25 |1      |
+|---------|----------|----------------|---------|--------------|-----------|---------------------------------------------|--------------------|-------|
+
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.next() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. ResultSet.close() returned void
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@bf1af3
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.getMoreResults() returned false
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.getUpdateCount() returned -1
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. PreparedStatement.close() returned 
+INFO  21-09-25 12:15:09[http-nio-8088-exec-3] [log4j2:197] - 1. Connection.clearWarnings() returned 
+INFO  21-09-25 12:15:36[HikariPool-1 connection closer] [log4j2:365] - 4. Connection closed. {executed in 4ms} 
+INFO  21-09-25 12:15:36[HikariPool-1 connection closer] [log4j2:197] - 4. Connection.close() returned 
+INFO  21-09-25 12:15:36[HikariPool-1 connection adder] [log4j2:365] - 5. Connection opened. {executed in 26ms} 
+INFO  21-09-25 12:15:36[HikariPool-1 connection adder] [log4j2:197] - 5. Connection.new Connection returned 
+INFO  21-09-25 12:15:36[HikariPool-1 connection adder] [log4j2:197] - 5. Connection.isReadOnly() returned false
+INFO  21-09-25 12:15:36[HikariPool-1 connection adder] [log4j2:197] - 5. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:16:05[HikariPool-1 connection closer] [log4j2:365] - 2. Connection closed. {executed in 1ms} 
+INFO  21-09-25 12:16:05[HikariPool-1 connection closer] [log4j2:197] - 2. Connection.close() returned 
+INFO  21-09-25 12:16:05[HikariPool-1 connection adder] [log4j2:365] - 6. Connection opened. {executed in 29ms} 
+INFO  21-09-25 12:16:05[HikariPool-1 connection adder] [log4j2:197] - 6. Connection.new Connection returned 
+INFO  21-09-25 12:16:05[HikariPool-1 connection adder] [log4j2:197] - 6. Connection.isReadOnly() returned false
+INFO  21-09-25 12:16:05[HikariPool-1 connection adder] [log4j2:197] - 6. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:16:13[HikariPool-1 connection closer] [log4j2:365] - 3. Connection closed. {executed in 0ms} 
+INFO  21-09-25 12:16:13[HikariPool-1 connection closer] [log4j2:197] - 3. Connection.close() returned 
+INFO  21-09-25 12:16:13[HikariPool-1 connection adder] [log4j2:365] - 7. Connection opened. {executed in 27ms} 
+INFO  21-09-25 12:16:13[HikariPool-1 connection adder] [log4j2:197] - 7. Connection.new Connection returned 
+INFO  21-09-25 12:16:13[HikariPool-1 connection adder] [log4j2:197] - 7. Connection.isReadOnly() returned false
+INFO  21-09-25 12:16:13[HikariPool-1 connection adder] [log4j2:197] - 7. Connection.getAutoCommit() returned true
+INFO  21-09-25 12:16:15[HikariPool-1 connection closer] [log4j2:365] - 1. Connection closed. {executed in 0ms} 
+INFO  21-09-25 12:16:15[HikariPool-1 connection closer] [log4j2:197] - 1. Connection.close() returned 
+INFO  21-09-25 12:16:15[HikariPool-1 connection adder] [log4j2:365] - 8. Connection opened. {executed in 24ms} 
+INFO  21-09-25 12:16:15[HikariPool-1 connection adder] [log4j2:197] - 8. Connection.new Connection returned 
+INFO  21-09-25 12:16:15[HikariPool-1 connection adder] [log4j2:197] - 8. Connection.isReadOnly() returned false
+INFO  21-09-25 12:16:15[HikariPool-1 connection adder] [log4j2:197] - 8. Connection.getAutoCommit() returned true
+DEBUG 21-09-25 12:29:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:29:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:29:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:29:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:30:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:30:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:30:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:30:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:31:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:31:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:31:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:31:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:32:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:32:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:32:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:32:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:33:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:33:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:33:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:33:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:34:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:34:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:34:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:34:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:35:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:35:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:35:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:35:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:36:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:36:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:36:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:36:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:37:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:37:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:37:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:37:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:38:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:38:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:38:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:38:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:39:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:39:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:39:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:39:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:40:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:40:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:40:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:40:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:41:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:41:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:41:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:41:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:42:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:42:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:42:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:42:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:43:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:43:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:43:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:43:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:44:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:44:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:44:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:44:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:45:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@20800f42: (connection has passed maxLifetime)
+INFO  21-09-25 12:45:03[HikariPool-1 connection closer] [log4j2:365] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 0ms} 
+open connections:  6 7 8 (3)
+INFO  21-09-25 12:45:03[HikariPool-1 connection closer] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+INFO  21-09-25 12:45:03[HikariPool-1 connection adder] [log4j2:365] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 33ms} 
+open connections:  6 7 8 9 (4)
+INFO  21-09-25 12:45:03[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+INFO  21-09-25 12:45:03[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+9. Connection.isReadOnly() returned false
+INFO  21-09-25 12:45:03[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412)
+9. Connection.getAutoCommit() returned true
+DEBUG 21-09-25 12:45:03[HikariPool-1 connection adder] [HikariPool:729] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7ad9c799
+DEBUG 21-09-25 12:45:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:45:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:45:47[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@11b1513c: (connection has passed maxLifetime)
+INFO  21-09-25 12:45:47[HikariPool-1 connection closer] [log4j2:365] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 1ms} 
+open connections:  7 8 9 (3)
+INFO  21-09-25 12:45:47[HikariPool-1 connection closer] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+INFO  21-09-25 12:45:47[HikariPool-1 connection adder] [log4j2:365] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 26ms} 
+open connections:  7 8 9 10 (4)
+INFO  21-09-25 12:45:47[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+INFO  21-09-25 12:45:47[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+10. Connection.isReadOnly() returned false
+INFO  21-09-25 12:45:47[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412)
+10. Connection.getAutoCommit() returned true
+DEBUG 21-09-25 12:45:47[HikariPool-1 connection adder] [HikariPool:729] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1d89ec10
+DEBUG 21-09-25 12:45:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:45:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:46:04[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@56dbee40: (connection has passed maxLifetime)
+INFO  21-09-25 12:46:04[HikariPool-1 connection closer] [log4j2:365] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 1ms} 
+open connections:  7 9 10 (3)
+INFO  21-09-25 12:46:04[HikariPool-1 connection closer] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+INFO  21-09-25 12:46:04[HikariPool-1 connection adder] [log4j2:365] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+11. Connection opened. {executed in 26ms} 
+open connections:  7 9 10 11 (4)
+INFO  21-09-25 12:46:04[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+11. Connection.new Connection returned 
+INFO  21-09-25 12:46:04[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+11. Connection.isReadOnly() returned false
+INFO  21-09-25 12:46:04[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412)
+11. Connection.getAutoCommit() returned true
+DEBUG 21-09-25 12:46:04[HikariPool-1 connection adder] [HikariPool:729] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1bb1d48b
+DEBUG 21-09-25 12:46:12[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2e2d0bc6: (connection has passed maxLifetime)
+INFO  21-09-25 12:46:12[HikariPool-1 connection closer] [log4j2:365] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 0ms} 
+open connections:  9 10 11 (3)
+INFO  21-09-25 12:46:12[HikariPool-1 connection closer] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+INFO  21-09-25 12:46:12[HikariPool-1 connection adder] [log4j2:365] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+12. Connection opened. {executed in 25ms} 
+open connections:  9 10 11 12 (4)
+INFO  21-09-25 12:46:12[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+12. Connection.new Connection returned 
+INFO  21-09-25 12:46:12[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+12. Connection.isReadOnly() returned false
+INFO  21-09-25 12:46:12[HikariPool-1 connection adder] [log4j2:197] -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412)
+12. Connection.getAutoCommit() returned true
+DEBUG 21-09-25 12:46:12[HikariPool-1 connection adder] [HikariPool:729] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1bead2df
+DEBUG 21-09-25 12:46:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:46:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:46:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:46:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:47:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:47:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:47:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:47:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:48:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:48:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:48:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:48:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:49:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:49:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:49:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:49:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:50:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:50:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:50:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:50:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:51:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:51:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:51:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:51:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:52:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:52:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:52:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:52:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:53:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:53:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:53:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:53:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:54:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:54:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:54:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:54:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:55:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:55:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:55:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:55:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:56:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:56:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:56:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:56:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:57:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:57:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:57:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:57:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:58:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:58:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:58:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:58:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:59:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:59:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 12:59:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 12:59:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:00:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:00:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:00:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:00:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:01:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:01:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:01:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:01:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:02:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:02:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:02:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:02:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:03:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:03:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:03:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:03:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:04:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:04:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:04:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:04:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:05:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:05:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:05:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:05:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:06:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:06:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:06:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:06:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:07:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:07:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:07:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:07:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:08:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:08:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:08:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:08:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:09:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:09:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:09:51[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:09:51[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-09-25 13:10:21[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=4, active=0, idle=4, waiting=0)
+DEBUG 21-09-25 13:10:21[HikariPool-1 housekeeper] [HikariPool:518] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

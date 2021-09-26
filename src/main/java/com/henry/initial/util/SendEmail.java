@@ -14,8 +14,8 @@ public class SendEmail {
 
     public void send(String what, String str) throws Exception {
         // 발신, 수신 정보
-        final String fromEmail = "hoyeon1008";
-        final String password = "qjtyidxhegcjmrag";
+        final String fromEmail = "seoiltech2mail";
+        final String password = "xkhwgavemlalukis";
         final String toEmail = "hoyeon1008@gmail.com";
 
         // 메일 내용
@@ -54,7 +54,7 @@ public class SendEmail {
         msg.addHeader("format", "flowed");
         msg.addHeader("Content-Transfer-Encoding", "8bit");
 
-        msg.setFrom(new InternetAddress(fromEmail, "관리자"));
+        msg.setFrom(new InternetAddress(fromEmail, "홈페이지"));
         msg.setReplyTo(InternetAddress.parse("no_reply@goodcodes.co.kr", false));
 
         msg.setSubject(subject, "UTF-8");
