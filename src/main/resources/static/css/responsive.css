@@ -1305,6 +1305,9 @@
     .ht__bradcaump__wrap {
         height: 220px;
     }
+    .ht__bradcaump__wrap2 {
+        height: 900px;
+    }
     .breadcrumb-item.active {
         font-size: 14px;
     }

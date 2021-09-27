@@ -86,19 +86,7 @@ $('.htc__product__container').imagesLoaded( function() {
       sticky_id.addClass("scroll-header");
     }
   });
-    
-    
-/*--------------------------
-  05. ScrollUp
----------------------------- */
-$.scrollUp({
-    scrollText: '<i class="zmdi zmdi-chevron-up"></i>',
-    easingType: 'linear',
-    scrollSpeed: 900,
-    animation: 'fade'
-});
-    
-    
+
 /*---------------------------
   06. Tooltip
 ------------------------------*/    
@@ -226,7 +214,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
       autoplay: false,
       navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
       autoplayTimeout: 10000,
-      items:1,
+      items:2,
       dots: false,
       lazyLoad: true,
       responsive:{
@@ -301,7 +289,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
       loop: true,
       nav:true,
       navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
-      items:1,
+      items:2,
       responsive:{
         0:{
           items:1
@@ -334,14 +322,18 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
 
 
   $('.product-slider-active').owlCarousel({
-      loop: false,
+      loop: true,
       margin:0,
       nav:true,
       navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
-      items:3,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:2200,
+      lazyLoad : true,
+      autoplaySpeed : 1700,
       responsive:{
         0:{
-          items:1
+          items:1.5
         },
         600:{
           items:2
@@ -486,7 +478,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
       autoplay: false,
       navText: false,
       autoplayTimeout: 10000,
-      items:1,
+      items:2,
       dots: false,
       lazyLoad: true,
       responsive:{

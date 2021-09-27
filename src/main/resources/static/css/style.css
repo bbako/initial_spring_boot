@@ -783,7 +783,12 @@
 .ht__bradcaump__wrap {
 	align-items: center;
 	display: flex;
-	height: 320px;
+	height: 220px;
+}
+.ht__bradcaump__wrap2 {
+	align-items: center;
+	display: flex;
+	height: 900px;
 }
 .bradcaump-title {
 	color: #343434;

@@ -21,8 +21,8 @@
                 <div class="col-xs-12">
                     <div class="bradcaump__inner text-center">
                         <h2 class="bradcaump-title">견적 문의</h2>
-                        <nav class="bradcaump-inner">
-                            <a class="breadcrumb-item">서일테크놀로지 T.032-589-7772로 문의 하시면 <br>
+                        <nav class="bradcaump-inner" style="word-break: keep-all;">
+                            <a class="breadcrumb-item">032-589-7772 / 032-422-2121 <br> 전화로 문의 하시면
                                 더 빠른 상담이 가능합니다.
                             </a>
                         </nav>
@@ -73,7 +73,7 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="estiModal" tabindex="-1" role="dialog" aria-labelledby="estiModalLabel" aria-hidden="true">
+<div class="modal fade" id="estiModal" style="overflow: auto;" tabindex="-1" role="dialog" aria-labelledby="estiModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -300,7 +300,6 @@
                         $("#e_title").prop('disabled', false);
                         $("#e_content").prop('disabled', false);
                     }
-
                     $('#estiModal').modal('show');
 
                 },

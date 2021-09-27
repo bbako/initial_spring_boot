@@ -499,62 +499,16 @@
 <div th:insert="./common/footer.html"></div>
 
 <script>
-  function getPro(upcate,j){
-    console.log(upcate + "--- " + j );
-    var formData = new FormData();
-
-    formData.append("upperCtgrId", upcate);
-    formData.append("ctgrId", j);
-
-    $.ajax({
-      url: '/getProduct',
-      processData: false,
-      contentType: false,
-      data: formData,
-      type: 'POST',
-      dataType:'json',
-      success: function(result){
-
-        console.log(result);
-
-       // $("#cate"+upcate).empty();
-
-        var str = "";
-
-        for(var i = 0 ; i < result.length ; i++ ){
-          str +='<div className="col-md-4 single__pro col-lg-4 cat--1 col-sm-4 col-xs-12">'
-                + '  <div className="product">'
-                + '    <div className="product__inner">'
-                + '      <div className="pro__thumb">'
-                + '        <a>'
-                + '          <img src="/display?fileName='+result[i].prdctImg+'" width="200px">'
-                + '        </a>'
-                + '      </div>'
-                + '    </div>'
-                + '    <div className="product__details">'
-                + '      <h2>'+result[i].prdctName+'</h2>'
-                + '    </div>'
-                + '  </div>'
-                + '</div>';
-        }
-       // $("#cate"+upcate).append(str);
-      },
-      error: function(jqXHR, textStatus, errorThrown){
-        console.log(textStatus);
-      }
-
+  $(function(){
+// 이미지 슬라이드 컨트롤를 사용하기 위해서는 carousel를 실행해야한다.
+    $('#carousel-example-generic').carousel({
+// 슬리아딩 자동 순환 지연 시간
+// false면 자동 순환하지 않는다.
+      interval: 1600,
+// 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
+      wrap: true,
+// 키보드 이벤트 설정 여부(?)
+      keyboard : true
     });
-
-  }
-
-  $('.owl-carousel').owlCarousel({
-    items:4,
-    lazyLoad:true,
-    nav:true,
-    loop:false,
-    navRewind:false,
-    margin:10
   });
-
-
 </script>

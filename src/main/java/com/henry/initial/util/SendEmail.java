@@ -16,7 +16,7 @@ public class SendEmail {
         // 발신, 수신 정보
         final String fromEmail = "seoiltech2mail";
         final String password = "xkhwgavemlalukis";
-        final String toEmail = "hoyeon1008@gmail.com";
+        final String toEmail = "sit6789@gmail.com";
 
         // 메일 내용
         String subject = what;
